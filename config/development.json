@@ -1,0 +1,42 @@
+{
+  "database": {
+    "migrator": {
+      "enabled": true,
+      "database": "footprints",
+      "hostname": "10.0.1.66",
+      "username": "migrator",
+      "password": "m1gr4t0r",
+      "port": 5432
+    },
+    "primary": {
+      "enabled": true,
+      "database": "footprints",
+      "hostname": "10.0.1.66",
+      "username": "footprints",
+      "password": "f33tst1nk",
+      "port": 5432
+    },
+    "reader": {
+      "enabled": true,
+      "database": "footprints",
+      "hostname": "10.0.1.66",
+      "username": "footprints_reader",
+      "password": "f33tst1nk_r34d",
+      "port": 5432
+    }
+  },
+  "http": {
+    "host": "0.0.0.0",
+    "port": 4318
+  },
+  "logger": {
+    "console": {
+      "enabled": true
+    },
+    "level": "info"
+  },
+  "tracing": {
+    "enabled": false,
+    "endpoint": "http://127.0.0.1:4318/v1/traces"
+  }
+}

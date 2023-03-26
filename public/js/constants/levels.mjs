@@ -1,0 +1,29 @@
+'use strict';
+
+const levels = {
+  INFO: 'INFO',
+  DEBUG: 'DEBUG',
+  WARN: 'WARN',
+  ERROR: 'ERROR',
+  CRITICAL: 'CRITICAL',
+  FATAL: 'FATAL'
+};
+
+const {
+  INFO: LEVEL_INFO,
+  DEBUG: LEVEL_DEBUG,
+  WARN: LEVEL_WARN,
+  ERROR: LEVEL_ERROR,
+  CRITICAL: LEVEL_CRITICAL,
+  FATAL: LEVEL_FATAL
+} = levels;
+
+export {
+  LEVEL_INFO,
+  LEVEL_DEBUG,
+  LEVEL_WARN,
+  LEVEL_ERROR,
+  LEVEL_CRITICAL,
+  LEVEL_FATAL,
+  levels
+};

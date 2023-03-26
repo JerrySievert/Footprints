@@ -1,0 +1,43 @@
+{
+  "database": {
+    "migrator": {
+      "enabled": false,
+      "pool": {
+        "connectionTimeoutMillis": 1200000,
+        "idleTimeoutMillis": 1000,
+        "max": 1,
+        "maxUses": 7500
+      }
+    },
+    "primary": {
+      "enabled": true,
+      "pool": {
+        "connectionTimeoutMillis": 1200000,
+        "idleTimeoutMillis": 1000,
+        "max": 60,
+        "maxUses": 7500
+      }
+    },
+    "reader": {
+      "enabled": false,
+      "pool": {
+        "connectionTimeoutMillis": 1200000,
+        "idleTimeoutMillis": 1000,
+        "max": 60,
+        "maxUses": 7500
+      }
+    }
+  },
+  "logger": {
+    "console": {
+      "enabled": true
+    },
+    "kafka": {
+      "enabled": false
+    }
+  },
+  "tracing": {
+    "enabled": false,
+    "endpoint": ""
+  }
+}

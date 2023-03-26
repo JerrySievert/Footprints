@@ -1,0 +1,4 @@
+node_modules
+.migrations.json
+*.lock
+.DS_Store

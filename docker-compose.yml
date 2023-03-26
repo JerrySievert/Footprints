@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  postgres:
+    build: .docker/postgres
+    image: postgres-hydra
+    command: postgres
+      -c shared_preload_libraries=pg_stat_statements,pg_partman_bgw,columnar
+      -c pg_partman_bgw.dbname=footprints,footprints_test
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+    ports:
+      - 5432:5432
+
+  footprints:
+    build: .
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 4318:4318
+    depends_on:
+      - postgres
