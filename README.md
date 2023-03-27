@@ -64,13 +64,12 @@ You are required to `docker exec` `bash` in the main footprints container and ru
 
 Logging is available through the `/v1/logs/insert` endpoint.
 
-|---------|----------|--------|
-|parameter|type |required|
-|---------|----------|--------|
-|`time` |`datetime`|yes |
-|`level` |`string` |yes |
-|`name` |`string` |yes |
-|`data` |`json` |yes |
+| parameter | type       | required |
+| --------- | ---------- | -------- |
+| `time`    | `datetime` | yes      |
+| `level`   | `string`   | yes      |
+| `name`    | `string`   | yes      |
+| `data`    | `json`     | yes      |
 
 ### Log Levels
 
