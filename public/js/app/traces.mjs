@@ -222,7 +222,7 @@ const app = createApp({
       content.data.forEach((trace) => {
         this.chart_data.push({
           x: +trace.trace_start,
-          y: trace.duration_ns / 1000000,
+          y: trace.duration_ns * 1000,
           id: trace.trace_id,
           fillColor: get_color(trace.service_name[0])
         });
